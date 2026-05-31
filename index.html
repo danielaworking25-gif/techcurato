@@ -312,13 +312,13 @@
       <button class="filter-btn font-body text-sm px-5 py-2 rounded-full border border-border text-muted" data-filter="smarthome">
         🏠 Smart Home
       </button>
-      <button class="filter-btn font-body text-sm px-5 py-2 rounded-full border border-border text-muted" data-filter="lifestyle">
-        ✨ Lifestyle
+      <button class="filter-btn font-body text-sm px-5 py-2 rounded-full border border-border text-muted" data-filter="summer">
+        ☀️ Summer & Lifestyle
       </button>
     </div>
 
     <!-- Products grid -->
-    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Cards injected by JS -->
     </div>
 
@@ -336,29 +336,38 @@
     <div class="max-w-6xl mx-auto">
       <div class="gradient-divider mb-16"></div>
 
-      <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Main about block -->
+      <div class="grid md:grid-cols-2 gap-12 items-start mb-16">
         <div class="reveal">
-          <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-3">Il nostro metodo</p>
+          <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-3">Chi siamo</p>
           <h2 class="font-heading font-bold text-3xl sm:text-4xl text-cream mb-6 leading-tight">
-            Perché fidarsi<br/>di TechCurato?
+            La redazione<br/>di TechCurato
           </h2>
+          <p class="text-muted leading-relaxed mb-4">
+            TechCurato nasce da una passione semplice: trovare i prodotti tecnologici che valgono davvero ogni euro speso, e condividerli con chi non ha tempo di fare ricerca da solo.
+          </p>
+          <p class="text-muted leading-relaxed mb-4">
+            Il nostro team segue ogni settimana le novità del mercato tech italiano e internazionale, analizza le recensioni verificate degli acquirenti reali, studia il rapporto qualità-prezzo e seleziona — senza compromessi — solo ciò che supera i nostri standard.
+          </p>
           <p class="text-muted leading-relaxed mb-6">
-            Non raccomandiamo nulla che non sceglieremmo per noi stessi. Ogni prodotto
-            passa attraverso una selezione rigorosa basata su recensioni reali, rapporto
-            qualità-prezzo e popolarità verificata tra gli acquirenti.
+            Non accettiamo prodotti sponsorizzati e non siamo pagati dai brand per promuovere nulla. La nostra unica fonte di sostentamento sono le commissioni affiliate di Amazon, che non influenzano mai le nostre scelte editoriali.
           </p>
           <ul class="space-y-3">
             <li class="flex items-start gap-3 text-sm text-muted">
               <span class="mt-0.5 w-5 h-5 rounded-full bg-accent-glow border border-accent/20 flex items-center justify-center text-accent flex-shrink-0 text-xs">✓</span>
-              Selezione basata su <strong class="text-cream font-medium">dati reali</strong> di vendita e recensioni
+              Selezione basata su <strong class="text-cream font-medium">dati reali</strong> di vendita e recensioni verificate
             </li>
             <li class="flex items-start gap-3 text-sm text-muted">
               <span class="mt-0.5 w-5 h-5 rounded-full bg-accent-glow border border-accent/20 flex items-center justify-center text-accent flex-shrink-0 text-xs">✓</span>
-              Aggiornamento settimanale per rimanere sempre <strong class="text-cream font-medium">al passo</strong>
+              Aggiornamento settimanale: <strong class="text-cream font-medium">prodotti sempre attuali</strong>, mai obsoleti
             </li>
             <li class="flex items-start gap-3 text-sm text-muted">
               <span class="mt-0.5 w-5 h-5 rounded-full bg-accent-glow border border-accent/20 flex items-center justify-center text-accent flex-shrink-0 text-xs">✓</span>
               Nessun conflitto d'interesse: scegliamo per <strong class="text-cream font-medium">te, non per i brand</strong>
+            </li>
+            <li class="flex items-start gap-3 text-sm text-muted">
+              <span class="mt-0.5 w-5 h-5 rounded-full bg-accent-glow border border-accent/20 flex items-center justify-center text-accent flex-shrink-0 text-xs">✓</span>
+              Acquisti su <strong class="text-cream font-medium">Amazon Italia</strong>: consegna rapida, reso facile, massima sicurezza
             </li>
           </ul>
         </div>
@@ -370,19 +379,47 @@
             <p class="text-muted text-sm">Prodotti analizzati ogni mese</p>
           </div>
           <div class="bg-card border border-border rounded-2xl p-6">
-            <p class="font-heading font-bold text-4xl gradient-text mb-1">4.8★</p>
-            <p class="text-muted text-sm">Valutazione media dei consigliati</p>
+            <p class="font-heading font-bold text-4xl gradient-text mb-1">4.7★</p>
+            <p class="text-muted text-sm">Valutazione media dei prodotti consigliati</p>
           </div>
           <div class="bg-card border border-border rounded-2xl p-6">
             <p class="font-heading font-bold text-4xl text-cream mb-1">100%</p>
-            <p class="text-muted text-sm">Indipendente e senza sponsorizzazioni</p>
+            <p class="text-muted text-sm">Indipendente, senza sponsorizzazioni</p>
           </div>
           <div class="bg-card border border-border rounded-2xl p-6">
             <p class="font-heading font-bold text-4xl text-cream mb-1">0 €</p>
-            <p class="text-muted text-sm">Costi nascosti per l'utente</p>
+            <p class="text-muted text-sm">Costi aggiuntivi per l'utente</p>
           </div>
         </div>
       </div>
+
+      <!-- Come lavoriamo - process steps -->
+      <div class="reveal">
+        <p class="text-accent text-xs font-semibold tracking-widest uppercase mb-8 text-center">Il nostro processo di selezione</p>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-card border border-border rounded-2xl p-5">
+            <div class="w-10 h-10 rounded-xl bg-accent-glow border border-accent/20 flex items-center justify-center text-accent font-heading font-bold text-lg mb-4">1</div>
+            <h4 class="font-heading font-semibold text-cream text-sm mb-2">Ricerca di mercato</h4>
+            <p class="text-muted text-xs leading-relaxed">Monitoriamo le classifiche bestseller di Amazon Italia e i trend di ricerca settimanali per identificare i prodotti più richiesti.</p>
+          </div>
+          <div class="bg-card border border-border rounded-2xl p-5">
+            <div class="w-10 h-10 rounded-xl bg-accent-glow border border-accent/20 flex items-center justify-center text-accent font-heading font-bold text-lg mb-4">2</div>
+            <h4 class="font-heading font-semibold text-cream text-sm mb-2">Analisi delle recensioni</h4>
+            <p class="text-muted text-xs leading-relaxed">Leggiamo centinaia di recensioni verificate per capire pregi, difetti reali e casi d'uso concreti di ogni prodotto candidato.</p>
+          </div>
+          <div class="bg-card border border-border rounded-2xl p-5">
+            <div class="w-10 h-10 rounded-xl bg-accent-glow border border-accent/20 flex items-center justify-center text-accent font-heading font-bold text-lg mb-4">3</div>
+            <h4 class="font-heading font-semibold text-cream text-sm mb-2">Valutazione Q/P</h4>
+            <p class="text-muted text-xs leading-relaxed">Confrontiamo le specifiche tecniche con il prezzo di mercato per garantire che ogni prodotto consigliato offra un valore reale e misurabile.</p>
+          </div>
+          <div class="bg-card border border-border rounded-2xl p-5">
+            <div class="w-10 h-10 rounded-xl bg-accent-glow border border-accent/20 flex items-center justify-center text-accent font-heading font-bold text-lg mb-4">4</div>
+            <h4 class="font-heading font-semibold text-cream text-sm mb-2">Pubblicazione</h4>
+            <p class="text-muted text-xs leading-relaxed">Solo i prodotti che superano tutti i criteri entrano nella nostra selezione. Aggiorniamo la lista ogni settimana rimuovendo ciò che non è più attuale.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -394,9 +431,12 @@
         <!-- Brand col -->
         <div>
           <p class="font-heading font-bold text-xl mb-3"><span class="gradient-text">TechCurato</span></p>
-          <p class="text-muted text-sm leading-relaxed">
-            La tua guida agli acquisti tech più intelligenti.
-            Curiamo ogni selezione con passione e metodo.
+          <p class="text-muted text-sm leading-relaxed mb-4">
+            La tua guida indipendente agli acquisti tech più intelligenti.
+            Selezioniamo ogni prodotto con passione, metodo e totale trasparenza.
+          </p>
+          <p class="text-muted text-xs leading-relaxed p-3 bg-card border border-border rounded-xl">
+            📌 <strong class="text-cream/70">Nota bene:</strong> In qualità di Affiliato Amazon ricevo un guadagno dagli acquisti idonei effettuati tramite i link presenti su questo sito.
           </p>
         </div>
 
@@ -404,20 +444,21 @@
         <div>
           <p class="text-cream text-xs font-semibold tracking-widest uppercase mb-4">Navigazione</p>
           <ul class="space-y-2 text-sm text-muted">
-            <li><a href="#prodotti" class="hover:text-cream transition-colors">Prodotti</a></li>
-            <li><a href="#chi-siamo" class="hover:text-cream transition-colors">Chi siamo</a></li>
-            <li><a href="#" class="hover:text-cream transition-colors">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-cream transition-colors">Cookie Policy</a></li>
+            <li><a href="#prodotti" class="hover:text-cream transition-colors">Prodotti consigliati</a></li>
+            <li><a href="#chi-siamo" class="hover:text-cream transition-colors">Chi siamo e metodo</a></li>
+            <li><a href="#" onclick="document.getElementById('modal-privacy').classList.remove('hidden'); return false;" class="hover:text-cream transition-colors">Privacy Policy</a></li>
+            <li><a href="#" onclick="document.getElementById('modal-cookie').classList.remove('hidden'); return false;" class="hover:text-cream transition-colors">Cookie Policy</a></li>
           </ul>
         </div>
 
         <!-- Disclaimer col -->
         <div>
           <p class="text-cream text-xs font-semibold tracking-widest uppercase mb-4">Informativa Legale</p>
+          <p class="text-muted text-xs leading-relaxed mb-3">
+            TechCurato partecipa al Programma di affiliazione Amazon EU, un programma pubblicitario che consente ai siti di percepire una commissione pubblicitaria pubblicizzando e fornendo link al sito amazon.it.
+          </p>
           <p class="text-muted text-xs leading-relaxed">
-            In qualità di Affiliato Amazon ricevo un guadagno dagli acquisti idonei. I prezzi
-            visualizzati sono indicativi e possono variare. Non ci assumiamo responsabilità
-            per variazioni di prezzo o disponibilità dei prodotti.
+            I prezzi visualizzati sono puramente indicativi e possono variare in qualsiasi momento. Verificare sempre il prezzo definitivo sulla pagina Amazon prima di procedere all'acquisto.
           </p>
         </div>
       </div>
@@ -426,14 +467,48 @@
 
       <div class="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-muted">
         <p>© 2024 TechCurato. Tutti i diritti riservati.</p>
-        <p class="text-center">
-          I link presenti su questo sito sono link affiliati Amazon.<br class="sm:hidden"/>
-          <strong class="text-cream/60">Acquistare tramite questi link non comporta costi aggiuntivi per te.</strong>
+        <p class="text-center text-xs">
+          I link di acquisto su questo sito sono link di affiliazione Amazon. <strong class="text-cream/60">Acquistare tramite questi link non comporta costi aggiuntivi per te.</strong>
         </p>
       </div>
 
     </div>
   </footer>
+
+  <!-- ═══════════════════ MODAL PRIVACY POLICY ═══════════════════ -->
+  <div id="modal-privacy" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4">
+    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="this.parentElement.classList.add('hidden')"></div>
+    <div class="relative bg-card border border-border rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 z-10">
+      <button onclick="document.getElementById('modal-privacy').classList.add('hidden')" class="absolute top-4 right-4 text-muted hover:text-cream text-2xl">×</button>
+      <h2 class="font-heading font-bold text-2xl text-cream mb-6">Privacy Policy</h2>
+      <div class="text-muted text-sm leading-relaxed space-y-4">
+        <p><strong class="text-cream">Titolare del trattamento:</strong> TechCurato — contatto disponibile tramite il sito.</p>
+        <p><strong class="text-cream">Dati raccolti:</strong> Questo sito non raccoglie direttamente dati personali degli utenti. Non sono presenti form di registrazione, aree riservate o sistemi di login.</p>
+        <p><strong class="text-cream">Dati di navigazione:</strong> I sistemi informatici e le procedure software preposte al funzionamento di questo sito web acquisiscono, nel corso del loro normale esercizio, alcuni dati personali la cui trasmissione è implicita nell'uso dei protocolli di comunicazione di Internet (indirizzi IP, tipo di browser, sistema operativo, ecc.). Questi dati vengono utilizzati al solo fine di ricavare informazioni statistiche anonime sull'uso del sito.</p>
+        <p><strong class="text-cream">Programma di Affiliazione Amazon:</strong> Questo sito partecipa al Programma di Affiliazione Amazon EU. I link verso Amazon.it possono trasmettere dati tecnici ad Amazon secondo la propria Privacy Policy, consultabile su amazon.it/privacy.</p>
+        <p><strong class="text-cream">Cookie:</strong> Questo sito utilizza esclusivamente cookie tecnici necessari al funzionamento. Non vengono utilizzati cookie di profilazione o cookie di terze parti a fini pubblicitari diretti.</p>
+        <p><strong class="text-cream">Diritti dell'utente:</strong> In conformità al GDPR (Reg. UE 2016/679), l'utente ha diritto di accesso, rettifica, cancellazione e portabilità dei propri dati. Per esercitare questi diritti, contattare il titolare tramite il sito.</p>
+        <p class="text-xs text-subtle">Ultimo aggiornamento: Gennaio 2025</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ MODAL COOKIE POLICY ═══════════════════ -->
+  <div id="modal-cookie" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4">
+    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="this.parentElement.classList.add('hidden')"></div>
+    <div class="relative bg-card border border-border rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 z-10">
+      <button onclick="document.getElementById('modal-cookie').classList.add('hidden')" class="absolute top-4 right-4 text-muted hover:text-cream text-2xl">×</button>
+      <h2 class="font-heading font-bold text-2xl text-cream mb-6">Cookie Policy</h2>
+      <div class="text-muted text-sm leading-relaxed space-y-4">
+        <p>Questo sito utilizza esclusivamente <strong class="text-cream">cookie tecnici</strong> necessari al corretto funzionamento delle pagine. Non vengono installati cookie di profilazione o di tracciamento.</p>
+        <p><strong class="text-cream">Cosa sono i cookie:</strong> I cookie sono piccoli file di testo che i siti web visitati dall'utente inviano al suo terminale (computer, tablet, smartphone), dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla visita successiva.</p>
+        <p><strong class="text-cream">Cookie tecnici utilizzati:</strong> Questo sito utilizza esclusivamente cookie tecnici di sessione, necessari alla navigazione e all'utilizzo delle funzionalità del sito. Questi cookie non richiedono il consenso dell'utente ai sensi dell'art. 122 del Codice Privacy.</p>
+        <p><strong class="text-cream">Cookie di terze parti:</strong> I link verso Amazon.it possono comportare l'installazione di cookie da parte di Amazon, secondo la propria Cookie Policy. TechCurato non ha controllo su questi cookie. Per maggiori informazioni consultare la Cookie Policy di Amazon su amazon.it.</p>
+        <p><strong class="text-cream">Come disabilitare i cookie:</strong> L'utente può configurare il proprio browser per rifiutare tutti i cookie o per ricevere un avviso quando viene inviato un cookie. Tuttavia, disabilitare i cookie potrebbe influire sulla funzionalità di alcune parti del sito.</p>
+        <p class="text-xs text-subtle">Ultimo aggiornamento: Gennaio 2025</p>
+      </div>
+    </div>
+  </div>
 
 
   <!-- ═══════════════════ JAVASCRIPT ═══════════════════ -->
@@ -457,78 +532,451 @@
     // ─────────────────────────────────────────────────────────
 
     const products = [
+
+      // ══════════════════════════════════════════════════════
+      // ── TECH & GADGET (8 prodotti) ────────────────────────
+      // ══════════════════════════════════════════════════════
       {
         id: 1,
         category: "tech",
         badge: "Scelta della Redazione",
         badgeType: "editorial",
-        emoji: "🎧",
-        title: "Sony WH-1000XM5",
-        description: "Le cuffie con cancellazione del rumore più avanzate al mondo. Una volta provate, non puoi più tornare indietro.",
+        emoji: "🔌",
+        title: "Anker Prime 240W GaN",
+        description: "Il caricatore GaN più potente e compatto del mercato: ricarica laptop, tablet e smartphone contemporaneamente senza portare tre adattatori.",
         pros: [
-          "ANC di nuova generazione: elimina il 99% del rumore esterno",
-          "30 ore di autonomia con ricarica rapida (3 min = 3 ore)",
-          "Audio Hi-Res certificato e codec LDAC per qualità senza pari"
+          "240W totali su 4 porte (3x USB-C + 1x USB-A) in un unico blocco compatto",
+          "Tecnologia GaN di ultima generazione: non scalda e non consuma standby",
+          "Compatibile con MacBook Pro, iPad, iPhone, Android e qualsiasi laptop"
         ],
-        rating: 4.9,
-        reviews: "4.217",
-        price: "€299",
-        affiliateUrl: "https://www.amazon.it/s?k=sony+wh1000xm5&tag=TUOTAG-21"
+        rating: 4.8,
+        reviews: "3.541",
+        price: "€89",
+        affiliateUrl: "https://www.amazon.it/s?k=anker+prime+240w+gan&tag=TUOTAG-21"
       },
       {
         id: 2,
-        category: "smarthome",
+        category: "tech",
         badge: "Il più venduto",
         badgeType: "bestseller",
-        emoji: "💡",
-        title: "Philips Hue Starter Kit",
-        description: "Trasforma ogni stanza in un'esperienza luminosa personalizzabile. Il punto di inizio perfetto per la smart home.",
+        emoji: "🎧",
+        title: "Sony WH-1000XM5",
+        description: "Le cuffie over-ear con la migliore cancellazione del rumore al mondo. Chi le prova non torna più indietro: un investimento che si ripaga ogni giorno.",
         pros: [
-          "16 milioni di colori e tonalità di bianco dinamico",
-          "Controllo vocale con Alexa, Google Home e Siri",
-          "Routine automatiche: la luce giusta al momento giusto"
+          "ANC adattivo con 8 microfoni: elimina voci, traffico e open space",
+          "30 ore di autonomia — 3 minuti di ricarica bastano per 3 ore di ascolto",
+          "Audio Hi-Res Wireless con codec LDAC per una qualità senza compromessi"
         ],
-        rating: 4.8,
-        reviews: "3.892",
-        price: "€79",
-        affiliateUrl: "https://www.amazon.it/s?k=philips+hue+starter+kit&tag=TUOTAG-21"
+        rating: 4.9,
+        reviews: "4.872",
+        price: "€279",
+        affiliateUrl: "https://www.amazon.it/s?k=sony+wh-1000xm5&tag=TUOTAG-21"
       },
       {
         id: 3,
         category: "tech",
-        badge: "Nuovo",
-        badgeType: "new",
-        emoji: "⌚",
-        title: "Apple Watch Series 10",
-        description: "Lo smartwatch che si prende cura di te 24 ore su 24. Design ultra-sottile, salute avanzata e connettività totale.",
+        badge: "Miglior Prezzo",
+        badgeType: "deal",
+        emoji: "📖",
+        title: "Kindle Paperwhite 2024",
+        description: "L'e-reader che ha convinto milioni di italiani a leggere di più. Display senza riflessi, batteria da settimane, impermeabile: perfetto ovunque tu sia.",
         pros: [
-          "Rilevamento apnea del sonno e ECG con allarme cardiaco",
-          "Display sempre attivo 40% più luminoso dei modelli precedenti",
-          "Resistente all'acqua fino a 50 metri, GPS e LTE integrati"
+          "Display da 7\" con 300 ppi — identico alla carta, zero affaticamento visivo",
+          "Impermeabile IPX8: puoi leggerlo in piscina o sotto la doccia",
+          "Batteria che dura settimane, ricarica USB-C in meno di 2 ore"
         ],
         rating: 4.8,
-        reviews: "1.654",
-        price: "€449",
-        affiliateUrl: "https://www.amazon.it/s?k=apple+watch+series+10&tag=TUOTAG-21"
+        reviews: "6.214",
+        price: "€159",
+        affiliateUrl: "https://www.amazon.it/s?k=kindle+paperwhite+2024&tag=TUOTAG-21"
       },
       {
         id: 4,
-        category: "lifestyle",
-        badge: "Miglior Prezzo",
-        badgeType: "deal",
-        emoji: "🌬️",
-        title: "Dyson Purifier Cool TP07",
-        description: "Purificatore, ventilatore e sensore della qualità dell'aria in uno. Design iconico che non passa mai di moda.",
+        category: "tech",
+        badge: "Novità",
+        badgeType: "new",
+        emoji: "💾",
+        title: "Samsung T7 Shield SSD 2TB",
+        description: "Il SSD portatile più robusto e veloce della sua fascia: trasferisci 2TB di file in pochi minuti, resistente a cadute, acqua e polvere.",
         pros: [
-          "Cattura il 99,95% delle particelle ultrafini — anche PM0.1",
-          "App Dyson: monitora in tempo reale la qualità dell'aria in casa",
-          "Silenzioso in modalità notte, oscillazione 350° per coprire ogni angolo"
+          "Velocità di trasferimento fino a 1.050 MB/s — 10x più veloce di un HDD",
+          "Resistente a cadute fino a 3 metri, certificazione IP65 acqua e polvere",
+          "Compatto quanto un biglietto da visita, compatibile con PC, Mac e smartphone"
         ],
         rating: 4.7,
-        reviews: "2.108",
-        price: "€549",
-        affiliateUrl: "https://www.amazon.it/s?k=dyson+purifier+cool+tp07&tag=TUOTAG-21"
+        reviews: "2.983",
+        price: "€119",
+        affiliateUrl: "https://www.amazon.it/s?k=samsung+t7+shield+2tb&tag=TUOTAG-21"
+      },
+      {
+        id: 5,
+        category: "tech",
+        badge: "Top Qualità/Prezzo",
+        badgeType: "deal",
+        emoji: "🖱️",
+        title: "Logitech MX Master 3S",
+        description: "Il mouse definitivo per chi lavora molte ore al giorno. Una volta usato, ogni altro mouse sembra un passo indietro: precisione, silenziosità e comfort senza pari.",
+        pros: [
+          "Sensore da 8.000 DPI che funziona anche su vetro — nessun tappetino richiesto",
+          "Clic silenziosi al 90%: finalmente lavori in open space senza disturbare",
+          "Scorrimento MagSpeed electromagnetico — 1 secondo di rotella = 1 pagina intera"
+        ],
+        rating: 4.8,
+        reviews: "5.107",
+        price: "€99",
+        affiliateUrl: "https://www.amazon.it/s?k=logitech+mx+master+3s&tag=TUOTAG-21"
+      },
+      {
+        id: 6,
+        category: "tech",
+        badge: "Scelta della Redazione",
+        badgeType: "editorial",
+        emoji: "🔋",
+        title: "Baseus PowerBank 20000mAh 65W",
+        description: "Il power bank che sostituisce il caricatore da muro: ricarica il laptop in viaggio, ha due porte USB-C ad alta potenza e costa molto meno della concorrenza.",
+        pros: [
+          "65W in uscita: ricarica un MacBook Air dal 20% al 100% in 90 minuti",
+          "Display LED che mostra la percentuale esatta di carica residua",
+          "Sottile e leggero: entra in qualsiasi zaino o borsa senza ingombro"
+        ],
+        rating: 4.7,
+        reviews: "4.329",
+        price: "€49",
+        affiliateUrl: "https://www.amazon.it/s?k=baseus+powerbank+20000mah+65w&tag=TUOTAG-21"
+      },
+      {
+        id: 7,
+        category: "tech",
+        badge: "Top Lavoro Remoto",
+        badgeType: "editorial",
+        emoji: "📷",
+        title: "Logitech StreamCam 1080p",
+        description: "La webcam che trasforma qualsiasi videochiamata in una produzione professionale: autofocus intelligente, luce naturale e orientamento verticale per i Reels.",
+        pros: [
+          "Autofocus AI sempre a fuoco sul viso, anche in movimento rapido",
+          "Campo visivo 78° con correzione automatica della luce ambientale",
+          "Supporto nativo per streaming verticale: perfetta per TikTok e Instagram Live"
+        ],
+        rating: 4.6,
+        reviews: "3.871",
+        price: "€149",
+        affiliateUrl: "https://www.amazon.it/s?k=logitech+streamcam&tag=TUOTAG-21"
+      },
+      {
+        id: 8,
+        category: "tech",
+        badge: "Novità",
+        badgeType: "new",
+        emoji: "🖥️",
+        title: "ASUS ZenScreen 15.6\" 1080p",
+        description: "Il monitor portatile che raddoppia la produttività ovunque tu vada: sottile come un quaderno, si collega in USB-C e funziona anche con lo smartphone.",
+        pros: [
+          "Display IPS Full HD da 15,6\": colori precisi e angoli di visione ampi",
+          "Alimentato e collegato con un solo cavo USB-C — zero adattatori extra",
+          "Cover inclusa che diventa supporto regolabile: lavori dove vuoi tu"
+        ],
+        rating: 4.6,
+        reviews: "2.104",
+        price: "€189",
+        affiliateUrl: "https://www.amazon.it/s?k=asus+zenscreen+15+pollici+usb-c&tag=TUOTAG-21"
+      },
+
+      // ══════════════════════════════════════════════════════
+      // ── SMART HOME (8 prodotti) ───────────────────────────
+      // ══════════════════════════════════════════════════════
+      {
+        id: 9,
+        category: "smarthome",
+        badge: "Il più venduto",
+        badgeType: "bestseller",
+        emoji: "🔊",
+        title: "Amazon Echo Dot 5ª Gen",
+        description: "L'altoparlante smart più venduto in Italia: suono migliorato, controllo vocale totale della casa e prezzo che non ha rivali. Il punto di inizio perfetto.",
+        pros: [
+          "Audio sorprendente per le dimensioni — bassa potenziata rispetto alla gen. precedente",
+          "Controlla luci, prese, TV e termostati con la voce tramite Alexa",
+          "Sensore di temperatura integrato: monitora il clima di ogni stanza"
+        ],
+        rating: 4.7,
+        reviews: "31.247",
+        price: "€54",
+        affiliateUrl: "https://www.amazon.it/s?k=amazon+echo+dot+5+generazione&tag=TUOTAG-21"
+      },
+      {
+        id: 10,
+        category: "smarthome",
+        badge: "Top Redazione",
+        badgeType: "editorial",
+        emoji: "🤖",
+        title: "Dreame L10s Ultra Gen 2",
+        description: "Il robot aspirapolvere e lavapavimenti che gestisce da solo tutta la pulizia di casa: svuota il contenitore, lava i moci e si ricarica in autonomia.",
+        pros: [
+          "10.000 Pa di aspirazione — raccoglie peli di animali, briciole e polvere fine",
+          "Stazione base automatica: svuota, lava e asciuga i moci senza intervento",
+          "Mappatura LiDAR precisa al centimetro con gestione multi-piano"
+        ],
+        rating: 4.7,
+        reviews: "1.876",
+        price: "€649",
+        affiliateUrl: "https://www.amazon.it/s?k=dreame+l10s+ultra+gen+2&tag=TUOTAG-21"
+      },
+      {
+        id: 11,
+        category: "smarthome",
+        badge: "Miglior Prezzo",
+        badgeType: "deal",
+        emoji: "🔌",
+        title: "TP-Link Tapo P100 (4 pezzi)",
+        description: "La presa smart più venduta d'Italia: rendi intelligente qualsiasi apparecchio in 30 secondi, senza hub, senza complicazioni e senza spendere cifre folli.",
+        pros: [
+          "Controllo da app ovunque tu sia: accendi o spegni dispositivi dal telefono",
+          "Compatibile con Alexa e Google Home — comandi vocali immediati",
+          "Programmazione automatica: imposta timer e routine personalizzate"
+        ],
+        rating: 4.6,
+        reviews: "18.432",
+        price: "€29",
+        affiliateUrl: "https://www.amazon.it/s?k=tp-link+tapo+p100+4+pezzi&tag=TUOTAG-21"
+      },
+      {
+        id: 12,
+        category: "smarthome",
+        badge: "Viral 2025",
+        badgeType: "new",
+        emoji: "🌈",
+        title: "Govee LED Strip MATTER 5m",
+        description: "Le strisce LED che hanno invaso TikTok e Instagram: colori vivissimi, sincronizzazione con la musica e compatibilità con tutti gli ecosistemi smart.",
+        pros: [
+          "Standard Matter: funziona con Alexa, Google, Apple Home e Samsung senza problemi",
+          "RGBIC con segmenti indipendenti — più colori contemporaneamente sulla stessa striscia",
+          "App Govee con effetti musicali, scene predefinite e controllo granulare"
+        ],
+        rating: 4.6,
+        reviews: "3.218",
+        price: "€39",
+        affiliateUrl: "https://www.amazon.it/s?k=govee+led+strip+matter&tag=TUOTAG-21"
+      },
+      {
+        id: 13,
+        category: "smarthome",
+        badge: "Scelta della Redazione",
+        badgeType: "editorial",
+        emoji: "💡",
+        title: "Philips Hue Starter Kit E27",
+        description: "Il sistema di illuminazione smart più premiato al mondo: colori perfetti, integrazione totale con tutti gli assistenti vocali e qualità costruttiva senza rivali.",
+        pros: [
+          "16 milioni di colori e bianchi da 2.000K a 6.500K per ogni atmosfera",
+          "Bridge incluso: controllo locale ultraveloce anche senza internet",
+          "Routine automatiche: svegliati con luce alba, addormentati con tramonto"
+        ],
+        rating: 4.8,
+        reviews: "4.103",
+        price: "€79",
+        affiliateUrl: "https://www.amazon.it/s?k=philips+hue+starter+kit+e27&tag=TUOTAG-21"
+      },
+      {
+        id: 14,
+        category: "smarthome",
+        badge: "Novità",
+        badgeType: "new",
+        emoji: "🔔",
+        title: "Ring Intercom Video 2025",
+        description: "Trasforma il tuo vecchio citofono in un dispositivo smart in meno di 30 minuti: vedi chi suona, parla e apri il portone da qualsiasi posto nel mondo.",
+        pros: [
+          "Video in streaming HD con visione notturna — mai più perdere una consegna",
+          "Apertura da remoto via app: fai entrare il corriere anche se sei fuori",
+          "Installazione fai-da-te in 30 minuti, compatibile con la maggior parte dei citofoni"
+        ],
+        rating: 4.5,
+        reviews: "2.651",
+        price: "€69",
+        affiliateUrl: "https://www.amazon.it/s?k=ring+intercom+video+2025&tag=TUOTAG-21"
+      },
+      {
+        id: 15,
+        category: "smarthome",
+        badge: "Top Sicurezza",
+        badgeType: "editorial",
+        emoji: "📹",
+        title: "Tapo C200 Telecamera WiFi",
+        description: "Tieni d'occhio casa tua da qualsiasi parte del mondo: visione notturna a colori, rilevamento di persone e notifiche istantanee sul telefono.",
+        pros: [
+          "Risoluzione 1080p Full HD con visione notturna a colori fino a 10 metri",
+          "Rilevamento intelligente di persone: zero notifiche false per gatti o auto",
+          "Rotazione 360° motorizzata controllabile da app — ogni angolo della stanza"
+        ],
+        rating: 4.6,
+        reviews: "9.847",
+        price: "€35",
+        affiliateUrl: "https://www.amazon.it/s?k=tapo+c200+telecamera+wifi&tag=TUOTAG-21"
+      },
+      {
+        id: 16,
+        category: "smarthome",
+        badge: "Risparmio Energetico",
+        badgeType: "deal",
+        emoji: "🌡️",
+        title: "Meross Termostato Smart MST700",
+        description: "Abbassa la bolletta del riscaldamento senza rinunciare al comfort: programma la temperatura da app, impara le tue abitudini e si integra con Alexa e Google.",
+        pros: [
+          "Risparmio fino al 31% sulla bolletta gas con la programmazione settimanale",
+          "Compatibile con Alexa, Google Home e Apple HomeKit — ecosistema libero",
+          "Installazione fai-da-te in 15 minuti: nessun elettricista necessario"
+        ],
+        rating: 4.5,
+        reviews: "1.932",
+        price: "€59",
+        affiliateUrl: "https://www.amazon.it/s?k=meross+termostato+smart+mst700&tag=TUOTAG-21"
+      },
+
+      // ══════════════════════════════════════════════════════
+      // ── SUMMER & LIFESTYLE (8 prodotti) ──────────────────
+      // ══════════════════════════════════════════════════════
+      {
+        id: 17,
+        category: "summer",
+        badge: "Il più venduto",
+        badgeType: "bestseller",
+        emoji: "🔈",
+        title: "JBL Charge 5 — Cassa Waterproof",
+        description: "La cassa Bluetooth che non si spegne mai: impermeabile IP67, 20 ore di musica e una potenza che riempie spiagge intere. La compagna estiva definitiva.",
+        pros: [
+          "IP67: sopravvive a immersioni in acqua fino a 1 metro per 30 minuti",
+          "20 ore di autonomia con PowerBank integrato per ricaricare il telefono",
+          "JBL PartyBoost: collegane due per un suono stereo potentissimo"
+        ],
+        rating: 4.8,
+        reviews: "12.543",
+        price: "€149",
+        affiliateUrl: "https://www.amazon.it/s?k=jbl+charge+5&tag=TUOTAG-21"
+      },
+      {
+        id: 18,
+        category: "summer",
+        badge: "Scelta Avventura",
+        badgeType: "editorial",
+        emoji: "🎥",
+        title: "GoPro HERO13 Black",
+        description: "Immortala ogni avventura estiva in qualità cinematografica: surf, immersioni, trekking, moto — registra tutto in 5.3K con stabilizzazione soprannaturale.",
+        pros: [
+          "Stabilizzazione HyperSmooth 6.0: video perfetti anche su moto o MTB",
+          "Impermeabile fino a 10 metri senza custodia — tuffati senza pensieri",
+          "Slow motion 4K 120fps: ogni onda, ogni salto trasformato in arte"
+        ],
+        rating: 4.7,
+        reviews: "5.218",
+        price: "€349",
+        affiliateUrl: "https://www.amazon.it/s?k=gopro+hero13+black&tag=TUOTAG-21"
+      },
+      {
+        id: 19,
+        category: "summer",
+        badge: "Top Estate 2025",
+        badgeType: "new",
+        emoji: "🕶️",
+        title: "Ray-Ban Meta Smart Glasses",
+        description: "Gli occhiali da sole che sono anche auricolari, fotocamera e assistente AI: ascolta musica, scatta foto e chatta con l'AI senza toccare il telefono.",
+        pros: [
+          "Speaker open-ear integrati: musica cristallina senza isolarti dal mondo",
+          "Fotocamera da 12MP per foto e video in prima persona con un solo tocco",
+          "Assistente Meta AI vocale: traduzioni, informazioni e messaggi a mani libere"
+        ],
+        rating: 4.5,
+        reviews: "3.891",
+        price: "€299",
+        affiliateUrl: "https://www.amazon.it/s?k=ray-ban+meta+smart+glasses&tag=TUOTAG-21"
+      },
+      {
+        id: 20,
+        category: "summer",
+        badge: "Indispensabile",
+        badgeType: "deal",
+        emoji: "❄️",
+        title: "EcoFlow Wave 2 Portatile",
+        description: "Il condizionatore portatile senza tubo che raffredda davvero: portalo in tenda, in barca o in furgone. Autonomia a batteria per ore di fresco ovunque.",
+        pros: [
+          "5.100 BTU di potenza reale — raffredda una stanza di 8 mq in 8 minuti",
+          "Batteria opzionale per 8+ ore di funzionamento completamente off-grid",
+          "Modalità riscaldamento integrata: funziona tutto l'anno, non solo in estate"
+        ],
+        rating: 4.6,
+        reviews: "1.432",
+        price: "€799",
+        affiliateUrl: "https://www.amazon.it/s?k=ecoflow+wave+2+condizionatore+portatile&tag=TUOTAG-21"
+      },
+      {
+        id: 21,
+        category: "summer",
+        badge: "Miglior Prezzo",
+        badgeType: "deal",
+        emoji: "🎒",
+        title: "Osprey Farpoint 40L",
+        description: "Lo zaino da viaggio preferito dai nomadi digitali di tutto il mondo: entra nel bagalio a mano, distribuisce il peso perfettamente e dura una vita.",
+        pros: [
+          "40 litri che entrano come bagaglio a mano su tutti i voli europei low cost",
+          "Sistema Airspeed: schiena ventilata e cinghie ergonomiche per ore di cammino",
+          "Pannello di accesso frontale a valigia — trovi tutto subito, senza svuotare"
+        ],
+        rating: 4.8,
+        reviews: "7.612",
+        price: "€179",
+        affiliateUrl: "https://www.amazon.it/s?k=osprey+farpoint+40&tag=TUOTAG-21"
+      },
+      {
+        id: 22,
+        category: "summer",
+        badge: "Novità 2025",
+        badgeType: "new",
+        emoji: "📍",
+        title: "Apple AirTag (4 pezzi)",
+        description: "Non perdere mai più il bagaglio in aeroporto: aggancia un AirTag alla valigia e segui la posizione esatta in tempo reale dall'app Dov'è del tuo iPhone.",
+        pros: [
+          "Rete Find My con 2 miliardi di dispositivi Apple: trovato ovunque nel mondo",
+          "Batteria CR2032 sostituibile: dura oltre un anno con uso normale",
+          "Ultra Wideband: precisione centimetrica per trovare oggetti nell'ultima posizione"
+        ],
+        rating: 4.8,
+        reviews: "21.087",
+        price: "€109",
+        affiliateUrl: "https://www.amazon.it/s?k=apple+airtag+4+pezzi&tag=TUOTAG-21"
+      },
+      {
+        id: 23,
+        category: "summer",
+        badge: "Ricarica Solare",
+        badgeType: "editorial",
+        emoji: "☀️",
+        title: "Anker PowerPort Solar 21W",
+        description: "Ricarica i tuoi dispositivi direttamente dal sole: campeggio, spiaggia, trekking — energia gratis ovunque ci sia luce, anche in giornate nuvolose.",
+        pros: [
+          "21W di potenza solare reale: ricarica uno smartphone in 2-3 ore di sole diretto",
+          "Pannelli pieghevoli e ultraleggeri: si arrotola in tasca o si aggancia allo zaino",
+          "Tecnologia PowerIQ: ottimizza la carica per ogni dispositivo connesso"
+        ],
+        rating: 4.5,
+        reviews: "4.231",
+        price: "€59",
+        affiliateUrl: "https://www.amazon.it/s?k=anker+caricatore+solare+21w&tag=TUOTAG-21"
+      },
+      {
+        id: 24,
+        category: "summer",
+        badge: "Top Mare 2025",
+        badgeType: "bestseller",
+        emoji: "🤿",
+        title: "Garmin Descent Mk3i Dive",
+        description: "Il computer da immersione più avanzato e desiderabile del momento: GPS integrato, mappe dettagliate dei fondali e tutto il monitoraggio della salute di un Garmin.",
+        pros: [
+          "Computer da immersione + smartwatch quotidiano: due dispositivi in uno",
+          "GPS integrato per tracciare il percorso di nuoto e risalita in superficie",
+          "Monitoraggio ossimetro, battito e stress — anche fuori dall'acqua tutto il giorno"
+        ],
+        rating: 4.7,
+        reviews: "1.108",
+        price: "€999",
+        affiliateUrl: "https://www.amazon.it/s?k=garmin+descent+mk3i&tag=TUOTAG-21"
       }
+
     ];
 
     // ─── Rendering stelle ───────────────────────────────────
